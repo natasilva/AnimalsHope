@@ -1,5 +1,5 @@
 # AnimalsHope
-AnimalsHope é o nome da aplicação web desenvolvida pelo nosso grupo para uma apresentação de TCC. O projeto consiste em um sistema que facilite a doação e adoção de animais de estimação (gatos e cachorros). A plataforma apresenta:
+AnimalsHope é o nome da aplicação web-responsiva desenvolvida pelo nosso grupo para uma apresentação de TCC. O projeto consiste em um sistema que facilite a doação e adoção de animais de estimação (gatos e cachorros). A plataforma apresenta:
 - Sistema para cadastrar usuários;
 - Sistema para Login de usuários;
 - Sistema para doação de animais;
