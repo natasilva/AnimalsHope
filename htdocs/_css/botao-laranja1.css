@@ -1,0 +1,15 @@
+/* Botão Laranja com linha de fora*/
+.btn-outline-orange{color:#f48024;border-color:#f48024}
+.btn-outline-orange:hover{color:#fff;background-color:#f48024;border-color:#f48024}
+.btn-outline-orange.focus,.btn-outline-orange:focus{box-shadow:0 0 0 .2rem rgba(244, 126, 36,.5)}
+.btn-outline-orange.disabled,.btn-outline-orange:disabled{color:#f48024;background-color:transparent}
+.btn-outline-orange:not(:disabled):not(.disabled).active,.btn-outline-orange:not(:disabled):not(.disabled):active,.show>.btn-outline-orange.dropdown-toggle{color:#fff;background-color:#f48024;border-color:#f48024}
+.btn-outline-orange:not(:disabled):not(.disabled).active:focus,.btn-outline-orange:not(:disabled):not(.disabled):active:focus,.show>.btn-outline-orange.dropdown-toggle:focus{box-shadow:0 0 0 .2rem rgba(244, 126, 36,.5)}
+
+/* Botão Laranja*/
+.btn-orange{color:#fff;background-color:#f48024;border-color:#f48024}
+.btn-orange:hover{color:#fff;background-color:#f48024;border-color:#f48024}
+.btn-orange.focus,.btn-orange:focus{color:#fff;background-color:#f48024;border-color:#f48024;box-shadow:0 0 0 .2rem rgba(244, 126, 36,.5)}
+.btn-orange.disabled,.btn-orange:disabled{color:#fff;background-color:#f48024;border-color:#f48024}
+.btn-orange:not(:disabled):not(.disabled).active,.btn-orange:not(:disabled):not(.disabled):active,.show>.btn-orange.dropdown-toggle{color:#fff;background-color:#f48024;border-color:#f48024}
+.btn-orange:not(:disabled):not(.disabled).active:focus,.btn-orange:not(:disabled):not(.disabled):active:focus,.show>.btn-orange.dropdown-toggle:focus{box-shadow:0 0 0 .2rem rgba(244, 126, 36,.5)}

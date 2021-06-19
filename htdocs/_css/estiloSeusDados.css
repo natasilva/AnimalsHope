@@ -1,0 +1,159 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background-color:  #451354;
+
+}
+
+.estrutura {
+  width: 97%;
+  max-width: 611px;
+  height: 400px;
+  margin: 80px auto 0;
+}
+.estrutura .container {
+  width: 97%;
+  max-width: 600px;
+  height: 830px;
+  background-color: #fff;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+.estrutura .container .part {
+  float: left;
+  height: 100%;
+}
+.estrutura .container .part.detalhes {
+  padding: 48px 40px 0;
+  width: 60%;
+}
+.estrutura .container .part.detalhes h1 {
+  background-color: #F4AA24;
+  color: white;
+  font-family: 'Fredoka One';
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 14px 0 10px 49px;
+  letter-spacing: 1px;
+  margin-left: -52px;
+  width: 100%;
+  max-width: 330px;
+}
+.estrutura .container .part.bg {
+  width: 40%;
+  background-image: url("https://image.freepik.com/fotos-gratis/cao-pug-isolado-em-um-fundo-branco_2829-11416.jpg");
+  background-position: center;
+  background-size: 160%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.estrutura .container form {
+  font-family: 'Work Sans', sans-serif;
+}
+.estrutura .container form .group {
+  display: block;
+  width: 100%;
+  float: left;
+  position: relative;
+  margin-bottom: 25px;
+}
+.estrutura .container form .group label {
+  font-size: 12px;
+  float: left;
+  width: 100%;
+  display: block;
+  margin-bottom: 5px;
+}
+.estrutura .container form .group select {
+  font-size: 12px;
+}
+.estrutura .container form .group input {
+  float: left;
+  width: 100%;
+  height: 30px;
+  font-size: 12px;
+  font-family: 'Work Sans', sans-serif;
+  border: 0;
+  color: #263238;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.estrutura .container form .submit-group {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+.estrutura .container form .submit { 
+  background: #F48024;
+  color: white;
+  width: 150px;
+  height: 30px;
+  border: 0;
+  font-size: 13px;
+  border-radius: 4px;
+  font-family: sans-serif;
+  overflow: hidden;
+}

@@ -1,0 +1,163 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img{
+  -webkit-user-drag: none;
+}
+.titulo_anuncios{
+  background-color: #F4AA24;
+  border-bottom: 1px solid #E1E8EE;
+  padding: 20px 30px;
+  color: white;
+  font-weight: 400;
+  border-radius: 5px 5px 0px 0px;
+}
+section{
+  background-color: white;
+  width: 70%;
+  margin: 0 auto;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+  border-radius: 5px;
+}
+div.colecao-anuncios{
+  padding: 2%;
+}
+table{
+  margin: 0 auto;
+}
+td.btn-delete{
+  width: fit-content;
+  text-align: center;
+}
+td.titulo-anuncio{
+  font-size: 20px; 
+  height: 60px;
+  padding-top: 30px;
+}
+
+td.btn-edit{
+  vertical-align: top;
+  text-align: right;
+  padding-top: 17px;
+}
+a.btn-edit-mobile{
+  float: right;
+  display:none;
+}
+td.image{
+  width: 130px;
+}
+td.image img{
+  border-radius: 5px;
+  height: 80px; 
+  width: 100%;
+}
+td.descricao{
+    padding-right: 15%;
+    vertical-align: top;
+}
+td.visitar{
+  padding-top: 20px;
+  vertical-align: bottom;
+}
+td{
+  padding: 5px;
+}
+
+/* BOTÃO VISITAR */
+.btn-visitar:link,
+.btn-visitar:visited{
+  font-size: 12px;
+  text-decoration: none;
+  text-transform:uppercase;
+  position:relative;
+  padding: 20px 40px;
+  border-radius:100px;
+  display:inline-block;
+  transition: all .5s;
+}
+
+.btn-white{
+  background: #F48024;
+  color: white;
+}
+
+.btn-visitar:hover{
+   box-shadow:0px 10px 10px rgba(0,0,0,0.2);
+   transform : translateY(-3px);
+}
+
+.btn-visitar:active{
+  box-shadow:0px 5px 10px rgba(0,0,0,0.2);
+  transform:translateY(-1px);
+}
+
+.btn-bottom-animation-1{
+  animation:comeFromBottom 1s ease-out .8s;
+}
+
+.btn-visitar::after{
+  content:"";
+  text-decoration: none;
+  text-transform:uppercase;
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  border-radius:100px;
+  display:inline-block;
+  z-index:-1;
+  transition: all .5s;
+}
+
+.btn-white::after {
+    background: #F48024;
+}
+
+.btn-animation-1:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+@keyframes comeFromBottom{
+  0%{
+    opacity:0;
+    transform:translateY(40px);
+  } 
+  100%{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+@media (max-width: 900px) {
+  section{
+    width: 99%;
+  }
+  table td:not(.btn-delete) {
+    display: block;
+  }
+  td.image{
+    width: 100%;
+    min-width: 128px;
+        min-height: 128px;
+    max-height: 330px;
+  }
+  td.image img{
+    height: 100%;
+    min-height: 128px;
+    max-height: 330px;
+  }
+  a.btn-edit-mobile{
+    display: inline;
+  }
+  td.btn-edit img{
+    display: none;
+  }
+  td.visitar{
+    text-align: center;
+  }
+}

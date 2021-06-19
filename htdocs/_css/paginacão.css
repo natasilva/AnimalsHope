@@ -1,0 +1,21 @@
+nav#navegacao-cards {
+    background-color: #d0d0d0;
+    width: 100%;
+    height: 58px;
+    padding: 10px 0;
+}
+nav#navegacao-cards ul {
+    height: 100%;
+}
+.page-link {
+    transition-duration: .5s;
+    color: #F48024;
+}
+.page-link:hover {
+    background-color: #F48024; /*#1656B7*/
+    color: white;
+}
+.page-active {
+    background-color: #F48024;
+    color: white;
+}

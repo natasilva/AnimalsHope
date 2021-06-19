@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    -webkit-user-drag: none;
+}
+section{
+    background-color: white;
+    width: 50%;
+    padding: 15px;
+    margin: 0 auto;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    border-radius: 5px;
+}
+form{
+    width: 100%;
+}
+form h1{
+    color: #FF6B00;
+}
+.form-group{
+    margin: 0 auto;
+    width: 70%;
+}
+.icon{
+    position: relative;
+    margin-bottom: 15px;
+}
+.icon label{
+    cursor: pointer;
+    width: 12%;
+    height: 25%;
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 0;
+    right: 27%;
+}
+.icon label img{
+    min-width: 32px;
+    min-height: 32px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+.embed-responsive-1by1::before {
+    padding-top: 0;
+}
+.portrait{
+    object-fit: cover;
+    width: 50%;
+    border-radius: 100%;
+    border: 1px solid black;
+    margin: auto;
+}
+.pre-images-title{
+    color: #2c2c2c;
+}
+#pre-images{
+    display: block;
+    position: fixed;
+    overflow: auto;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    border: 1px solid black;
+    width: 25%;
+    max-height: 543px;
+    background-color: white;
+    top: 27%;
+    right: 5%;
+}
+#pre-images span{
+    -webkit-user-drag: none;
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    width: 32px;
+    height: 32px;
+    background-image: url(../images/x-mark-32.png);
+}
+#pre-images span:hover{
+    transform: scale(1.2);
+    transition: 1s;
+    z-index: 2;
+}
+.pre-images-inactive{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .5s, opacity .5s linear;
+}
+.pre-images-active{
+    visibility: visible;
+    opacity: 1;
+    transition: visibility .5s, opacity .5s linear;
+}
+#pre-images ul{
+    padding-left: 0;
+    display: inline-block;
+    list-style-type: none;
+}
+#pre-images ul li{
+    text-align: center;
+    padding: 15px;
+    width: 33%;
+    float:left;
+}
+#pre-images ul li img {
+    border-radius: 100%;
+    border: 1px solid black;
+    max-width: 128px;
+    width: 100%;
+    height: auto;
+}
+#pre-images ul li img:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+    transition: 1s;
+    z-index: 2;
+}
+#show-images{
+    display: none;
+}
+.col-first{
+    max-width: max-content;
+}
+.teste{
+    max-width: 50%;
+    min-width: 200px;
+}
+.col select#uf{
+    max-width: max-content;
+    min-width: max-content;
+}
+.col select#cidade{
+    min-width: 170px;
+}
+@media(max-width: 463px){
+    .col-first{
+        min-width: 100%;
+    }
+    .col select#uf{
+        min-width: 100%;
+    }
+}
+@media (max-width: 950px ){
+    section{
+        width: 98%;
+    }
+}
+@media(max-width: 1100px){
+    #pre-images{
+        top:1%;
+        right: 1%;
+        max-height: none !important;
+        height: 98%;
+        width: 98%;
+        z-index: 9999;
+    }
+}
+@media(max-width: 1173px){
+    .teste{
+        min-width: 100%;
+    }
+}

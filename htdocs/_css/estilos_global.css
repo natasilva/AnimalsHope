@@ -1,0 +1,83 @@
+/* Estilos do Scroll  */
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    border: 7px solid #232943;
+    box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(142, 142, 142);
+    border-radius: 80px;
+}
+
+/* Navbar */
+.nav-main {
+    background-color: #451354;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.265);
+    top: 0;
+    transition: top .3s;
+}
+
+/*  Classe para se usar em títulos  */
+.titulo{
+    font-family: Fredoka One, cursive;
+}
+
+/*  Cor e fonte padrão  */
+body{
+    font-family: Montserrat;
+    background-color: #451354;
+}
+
+/*  Estilos do Footer  */
+footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #0e0e0e;
+    padding: 60px 20% 1% 20%;
+    color: #858585;
+}
+#container-rodape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#container-rodape ul {
+    list-style: none;
+    margin-left: 20px;
+}
+#container-rodape ul li {
+    margin-bottom: 30px;
+}
+footer ul li:hover {
+    transform: scale(1.1);
+}
+#container-rodape ul li a {
+    color: #858585;
+}
+#container-rodape ul li a:hover {
+    text-decoration: none;
+    color: whitesmoke;
+    transition-duration: 0.5s;
+}
+footer p {
+    text-align: center;
+    font-style: italic;
+}
+@media(max-width: 538px) {
+    div#container-rodape {
+        justify-content: center;
+        flex-direction: column;
+    }
+    div#container-rodape div {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    div#container-rodape ul {
+        text-align: center;
+        padding: 0;
+        margin-left: 0;
+    }
+}

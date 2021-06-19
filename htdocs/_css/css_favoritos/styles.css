@@ -1,0 +1,205 @@
+* {
+   box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #451354;
+  font-family: sans-serif;
+}
+
+.itens-favoritos {
+  width: 750px;
+  height: auto;
+  margin: 80px auto;
+  background: #FFFFFF;
+  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+  border-radius: 6px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo_AN {
+  font-family: 'Fredoka One';  
+  background-color: #F4AA24;
+  height: 60px;
+  border-bottom: 1px solid #E1E8EE;
+  padding: 20px 30px;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.anuncio {
+  padding: 20px 30px;
+  height: 120px;
+  display: flex;
+}
+
+.botoes {
+  position: relative;
+  padding-top: 30px;
+  margin-right: 18px;
+}
+
+.btn-deletar {
+  position: center;
+  display: inline-block;
+  cursor: pointer;
+  width: 22px;
+  height: 21px;
+  background: url("https://imagizer.imageshack.com/img924/6488/BfFlE7.png") no-repeat center;
+  margin-right: 20px;
+  background-size: cover;
+}
+
+
+.imagem {
+  margin-right: 20px;
+}
+.tamanho{
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  height: 80px;
+  width: 120px;
+  object-fit: cover;
+}
+
+.descricao {
+  padding-top: center;
+  margin-right: 60px;
+  width: 400px;
+}
+
+.descricao span {
+  font-weight: bold;
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Fredoka One'; 
+}
+
+.descricao span:last-child {
+  display: inline-block;
+  font-size: 15px;
+  font-family: 'Montserrat';
+  font-weight: 300;
+  margin-top: 8px;
+  max-width: 31ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 8px;
+  color: #86939E;
+}
+
+/* BOTÃO VISITAR */
+
+.btn_visitar {
+  width: 250px;
+  height: 250px;
+  padding-top: 25px;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 300;
+  background-size: cover;
+}
+
+.btn:link,
+.btn:visited{
+  font-size: 12px;
+  text-decoration: none;
+  text-transform:uppercase;
+  position:relative;
+  top:0;
+  left:0;
+  padding:20px 40px;
+  border-radius:100px;
+  display:inline-block;
+  transition: all .5s;
+}
+
+.btn-white{
+  background: #FA8024;
+  color: white;
+}
+
+.btn:hover{
+   box-shadow:0px 10px 10px rgba(0,0,0,0.2);
+   transform : translateY(-3px);
+}
+
+.btn:active{
+  box-shadow:0px 5px 10px rgba(0,0,0,0.2);
+  transform:translateY(-1px);
+}
+
+.btn-bottom-animation-1{
+  animation:comeFromBottom 1s ease-out .8s;
+}
+
+.btn::after{
+  content:"";
+  text-decoration: none;
+  text-transform:uppercase;
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  border-radius:100px;
+  display:inline-block;
+  z-index:-1;
+  transition: all .5s;
+}
+
+.btn-white::after {
+    background: #FA8024;
+}
+
+.btn-animation-1:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+@keyframes comeFromBottom{
+  0%{
+    opacity:0;
+    transform:translateY(40px);
+  } 
+  100%{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .itens-favoritos {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  .anuncio {
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .imagem img {
+    width: 50%;
+  }
+  .imagem,
+  .descricao,
+  .tamanho {
+    height: auto;
+    width: 100%;
+    text-align: center;
+    margin: 6px 0;
+  }
+  .botoes {
+    margin-right: -17px;
+  }
+}

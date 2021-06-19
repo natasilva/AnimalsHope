@@ -1,0 +1,61 @@
+section{
+    background-color: white;
+    width: 50%;
+    padding: 15px;
+    margin: 0 auto;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    border-radius: 5px;
+}
+.form-group{
+    margin: 0 auto;
+    width: 70%;
+}
+form h1{
+    color: #FF6B00;
+}
+*{
+    --size: 300px;
+}
+.img[src="../images/plus-simbol.png"]{
+    margin: 0 auto;
+    max-width: 300px;
+}
+.img{
+    max-width: 100%;
+}
+.btn-select-image{
+    width: 100%;
+    height: 70px;
+}
+.btn-select-image p{
+    font-size: 20px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+input[type="file"]{
+    display: none;
+}
+textarea.form-control{
+    resize: none;
+}
+@media(max-width: 330px){
+    *{
+        --size: 100px;
+    }
+}
+@media(max-width: 500px) and (min-width: 330px){
+    *{
+        --size: 200px;
+    }
+}
+@media(max-width: 630px){
+    section{
+        width: 98%;
+    }
+}
+@media(max-width: 1000px){
+    div.img-portrait{
+       height: auto;
+    }
+}
