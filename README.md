@@ -9,3 +9,12 @@ AnimalsHope é o nome da aplicação web-responsiva desenvolvida pelo nosso grup
 - Sistema de favoritos para o usuário salvar seus anúncios preferidos em seu perfil;
 - Sistema para o usuário visualizar e gerenciar as suas doações (podendo apagá-las e editá-las);
 - Sistema para o usuário visualizar e editar os seus dados pessoais;
+
+O projeto foi desenvolvido com:
+- PHP
+- HTML
+- CSS
+- JavaScript
+- JQuery
+- Bootstrap
+- Banco MySQL
